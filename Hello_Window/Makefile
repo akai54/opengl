@@ -7,7 +7,6 @@ SHELL = /bin/sh
 
 # définition des commandes utilisées
 CC = g++
-ECHO = echo
 RM = rm -f
 MKDIR = mkdir
 
@@ -17,29 +16,12 @@ LDFLAGS = -lglfw3 -lGL -lX11 -lpthread -lXrandr -lXi -ldl
 # définition des fichiers et dossiers
 PROGNAME = main
 VERSION = 1.0
-distdir = $(PROGNAME)-$(VERSION)
-HEADERS = 
 SOURCES = main.cpp glad.c
-
-# EXTRAFILES = COPYING $(wildcard shaders/*.?s images/*.png)
-DISTFILES = $(SOURCES) Makefile $(HEADERS)
 
 all: $(PROGNAME)
 
-$(PROGNAME):
+$(PROGNAME): $(SOURCES)
 	$(CC) $(SOURCES) $(LDFLAGS) -o $(PROGNAME)
 
-
-dist: distdir
-	$(CHMOD) -R a+r $(distdir)
-	$(TAR) zcvf $(distdir).tgz $(distdir)
-	$(RM) -r $(distdir)
-
-distdir: $(DISTFILES)
-	$(RM) -r $(distdir)
-	$(MKDIR) $(distdir)
-	$(CHMOD) 777 $(distdir)
-	$(CP) $(DISTFILES) $(distdir)
-
 clean:
-	@$(RM) -r $(PROGNAME) $(OBJ) *~ $(distdir).tgz gmon.out core.*
+	@$(RM) -r $(PROGNAME)

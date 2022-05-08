@@ -53,7 +53,7 @@ int main() {
     return -1;
   }
 
-  /*  tell GLFW we want to call this function on every window resize by
+  /*  Tell GLFW we want to call this function on every window resize by
    * registering it. */
   glfwSetFramebufferSizeCallback(window, framebuffer_size_callback);
 
