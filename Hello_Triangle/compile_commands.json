@@ -1,0 +1,26 @@
+[
+  {
+    "arguments": [
+      "/usr/bin/g++",
+      "-c",
+      "-o",
+      "main",
+      "main.cpp"
+    ],
+    "directory": "/home/beshoux/Bureau/opengl",
+    "file": "/home/beshoux/Bureau/opengl/main.cpp",
+    "output": "/home/beshoux/Bureau/opengl/main"
+  },
+  {
+    "arguments": [
+      "/usr/bin/g++",
+      "-c",
+      "-o",
+      "main",
+      "glad.c"
+    ],
+    "directory": "/home/beshoux/Bureau/opengl",
+    "file": "/home/beshoux/Bureau/opengl/glad.c",
+    "output": "/home/beshoux/Bureau/opengl/main"
+  }
+]
