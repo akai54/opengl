@@ -1,0 +1,26 @@
+[
+  {
+    "arguments": [
+      "/usr/bin/g++",
+      "-c",
+      "-o",
+      "main",
+      "main.cpp"
+    ],
+    "directory": "/home/beshoux/Bureau/opengl/Hello_Rectangle",
+    "file": "/home/beshoux/Bureau/opengl/Hello_Rectangle/main.cpp",
+    "output": "/home/beshoux/Bureau/opengl/Hello_Rectangle/main"
+  },
+  {
+    "arguments": [
+      "/usr/bin/g++",
+      "-c",
+      "-o",
+      "main",
+      "glad.c"
+    ],
+    "directory": "/home/beshoux/Bureau/opengl/Hello_Rectangle",
+    "file": "/home/beshoux/Bureau/opengl/Hello_Rectangle/glad.c",
+    "output": "/home/beshoux/Bureau/opengl/Hello_Rectangle/main"
+  }
+]
